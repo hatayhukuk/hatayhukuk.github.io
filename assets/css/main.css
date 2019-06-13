@@ -1769,6 +1769,11 @@ input, select, textarea {
 			width: 100%;
 		}
 
+		.image.middle {
+			display: block;
+			width: 100px;
+		}
+
 		.image.featured {
 			display: block;
 			width: 100%;
@@ -1984,7 +1989,6 @@ input, select, textarea {
 	}
 
 		.item header {
-			background: #fff;
 			margin: 0;
 			padding: 1em 0 1em 0;
 			font-size: 0.8em;
@@ -2214,6 +2218,9 @@ input, select, textarea {
 			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 			text-align: center;
 			background-image: url("images/overlay.png");
+			-webkit-text-stroke: 1px white;
+			-webkit-text-fill-color: white;
+			text-shadow: 10px 10px 6px black;
 		}
 
 			#main > section.dark {
@@ -2247,18 +2254,18 @@ input, select, textarea {
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				background-image: url("../../images/justice.jpg");
 			}
 
 			#main > section.two {
 				background-color: #f5fafa;
-				background-image: url("../../images/pic03.jpg");
+				background-image: url("../../images/lawyers.jpg");
 
 			}
 
 			#main > section.three {
 				background-color: #ecf1f1;
-				background-image: url("../../images/pic02.jpg");
+				background-image: url("../../images/about.jpg");
 			}
 
 			#main > section.four {
