@@ -74,7 +74,9 @@
 				
 					<!-- About Me -->
 				<section id="about" class="three dark cover">
-					<div class="container">
+					<div data-aos="zoom-in-up" 
+					data-aos-delay="50"
+					class="container">
 
 						<header style="padding-top: 2%">
 							<h2>Hakkımızda</h2>
@@ -100,8 +102,7 @@
 								<div class="col-4 col-12-mobile">
 									<article class="item">
 										<div data-aos="flip-left"
-										data-aos-delay="50"
-    									data-aos-duration="4000"><img src="images/cengiz.jpg" alt=""></div>
+										data-aos-delay="50"><img src="images/cengiz.jpg" alt=""></div>
 										<header>
 											<h2>Cengiz Kaan Bozkurt</h3>
 										</header>
@@ -110,8 +111,7 @@
 								<div class="col-4 col-12-mobile">
 									<article class="item">
 										<div data-aos="zoom-in"
-										data-aos-delay="50"
-    									data-aos-duration="4000"><img src="images/aykut.jpg" alt=""></div>
+										data-aos-delay="50"><img src="images/aykut.jpg" alt=""></div>
 										<header>
 											<h2>Aykut Kan</h3>
 										</header>
@@ -120,8 +120,7 @@
 								<div class="col-4 col-12-mobile">
 									<article class="item">
 										<div data-aos="flip-right"
-										data-aos-delay="50"
-    									data-aos-duration="4000"><img src="images/seyhan.jpg" alt=""></div>
+										data-aos-delay="50"><img src="images/seyhan.jpg" alt=""></div>
 										<header>
 											<h2>Seyhan Şahin</h3>
 										</header>
@@ -190,7 +189,9 @@
 			<script src="assets/js/main.js"></script>
 			<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 			<script>
-				AOS.init();
+				AOS.init(
+					{duration: 1200}
+				);
 			</script>
 	</body>
 </html>
