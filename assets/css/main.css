@@ -18,6 +18,8 @@ tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
+
+	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -36,6 +38,140 @@ body {
 ol, ul {
 	list-style: none;
 }
+
+.card-container {
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	background-color: black;
+	background-size: cover;
+	cursor: pointer;
+	text-align: left;
+	box-shadow: 0 0 5px rgb(255, 255, 255);
+  }
+  .overlay {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 2fr 2fr 1fr;
+	background: rgba(77, 77, 77, .9);
+	color: #fef5df;
+	opacity: 0;
+	transition: all 0.5s;
+	font-family: 'Playfair Display', serif;
+  }
+  .items {
+	padding-left: 20px;
+	letter-spacing: 3px;
+  }
+  .head {
+	font-size: 30px;
+	line-height: 30px;
+	transform: translateY(40px);
+	transition: all 0.7s;
+  }
+  .head hr {
+	display: block;
+	width: 0;
+	border: none;
+	border-bottom: solid 2px #fef5df;
+	position: absolute;
+	bottom: 0;
+	left: 20px;
+	transition: all 0.5s;
+  }
+  .price {
+	font-size: 22px;
+	line-height: 10px;
+	font-weight: bold;
+	opacity: 0;
+	transform: translateY(40px);
+	transition: all 0.7s;
+  }
+  .price .old {
+	text-decoration: line-through;
+	color: #b3b3b3;
+  }
+  .cart {
+	font-size: 15px;
+	opacity: 0;
+	letter-spacing: 1px;
+	font-family: 'Lato', sans-serif;
+	transform: translateY(40px);
+	transition: all 0.7s;
+  }
+  .cart i {
+	font-size: 16px;
+  }
+  .cart span {
+	font-size: 16px;
+	margin-left: 10px;
+  }
+  .card-container:hover .overlay {
+	opacity: 1;
+  }
+  .card-container:hover .overlay .head {
+	transform: translateY(0px);
+  }
+  .card-container:hover .overlay hr {
+	width: 80%;
+	transition-delay: 0.4s;
+  }
+  .container:hover .overlay .price {
+	transform: translateY(0px);
+	transition-delay: 0.3s;
+	opacity: 1;
+  }
+  .card-container:hover .overlay .cart {
+	transform: translateY(0px);
+	transition-delay: 0.6s;
+	opacity: 1;
+  }
+  
+
+
+.flip-card {
+	background-color: transparent;
+	width: 201px;
+	height: 278px;
+	perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 1s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+	background-color: #bbb;
+	color: black;
+  }
+  
+  .flip-card-back {
+	background-color: #f1da09;
+	color: white;
+	transform: rotateY(180deg);
+  }
+
 
 blockquote, q {
 	quotes: none;
@@ -112,7 +248,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		color: #666;
+		color: rgb(255, 255, 255);
 		line-height: 1.5em;
 	}
 
@@ -2218,9 +2354,8 @@ input, select, textarea {
 			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 			text-align: center;
 			background-image: url("images/overlay.png");
-			-webkit-text-stroke: 1px white;
-			-webkit-text-fill-color: white;
-			text-shadow: 10px 10px 6px black;
+			/*-webkit-text-stroke: 1px white;
+			-webkit-text-fill-color: white;*/
 		}
 
 			#main > section.dark {
@@ -2253,23 +2388,20 @@ input, select, textarea {
 			}
 
 			#main > section.one {
-				background-color: #81918E;
-				background-image: url("../../images/justice.jpg");
+				background-color: #4d4d4d;
 			}
 
 			#main > section.two {
-				background-color: #f5fafa;
-				background-image: url("../../images/lawyers.jpg");
+				background-color: #4d4d4d;
 
 			}
 
 			#main > section.three {
-				background-color: #ecf1f1;
-				background-image: url("../../images/about.jpg");
+				background-color: #4d4d4d;
 			}
 
 			#main > section.four {
-				background-color: #e8edec;
+				background-color: #4d4d4d;
 			}
 
 /* Wide */

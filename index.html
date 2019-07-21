@@ -12,7 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body class="is-preload">
 
@@ -75,13 +75,13 @@
 					<!-- About Me -->
 				<section id="about" class="three dark cover">
 					<div data-aos="zoom-in-up" 
-					data-aos-delay="50"
+					data-aos-delay="5"
 					class="container">
 
-						<header style="padding-top: 2%">
+						<header>
 							<h2>Hakkımızda</h2>
 						</header>
-						<p style="padding-top: 9%;padding-bottom: 3%">
+						<p style="padding-top: 9%">
 							Hatay Hukuk Bürosu 1992 yılında <strong>Av. Gültekin Bozkurt</strong> ve <strong>Av. Düriye Bozkurt</strong> 
 							tarafından Antakyada kurulmuş olup o günden bugüne adli mercilerde müvekkilleri adına iş ve dava takibi yapmaktadır. 
 							Halihazırda üç ortak avukat, stajyer avukatlar, katip ve sekreteriyle Hatay çevresinde hizmet vermektedir.
@@ -95,38 +95,66 @@
 						<div class="container">
 
 							<header>
-								<h2>Avukatlarımız</h2>
+								<h2 class="">Avukatlarımız</h2>
 							</header>
 
 							<div class="row">
 								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<div data-aos="flip-left"
-										data-aos-delay="50"><img src="images/cengiz.jpg" alt=""></div>
-										<header>
-											<h2>Cengiz Kaan Bozkurt</h3>
-										</header>
-									</article>
+										<div class="card-container" style="background: url(images/cengiz.jpg);width:192px;height:240px;">
+												<div class="overlay">
+												  <div class = "items">
+												  </div>
+												  <div class = "items head">
+													<p>Cengiz Kaan Bozkurt</p>
+												  </div>
+												  <div class = "items head">
+														<hr>
+												  </div>
+												  <div class="items cart">
+													<i class="icon solid fa-phone-alt"></i>
+													<span>0532 064 4094</span>
+												</div>
+											  </div>
+											  </div>
 								</div>
+	
 								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<div data-aos="zoom-in"
-										data-aos-delay="50"><img src="images/aykut.jpg" alt=""></div>
-										<header>
-											<h2>Aykut Kan</h3>
-										</header>
-									</article>
+										<div class="card-container" style="background: url(images/aykut.jpg);width:192px;height:240px;">
+												<div class="overlay">
+												  <div class = "items">
+												  </div>
+												  <div class = "items head">
+													<p>Aykut Kan</p>
+												  </div>
+												  <div class = "items head">
+													<hr>
+											  	  </div>
+												  <div class="items cart">
+													<i class="icon solid fa-phone-alt"></i>
+													<span>0532 060 1938</span>
+												</div>
+											  </div>
+											  </div>
 								</div>	
+
 								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<div data-aos="flip-right"
-										data-aos-delay="50"><img src="images/seyhan.jpg" alt=""></div>
-										<header>
-											<h2>Seyhan Şahin</h3>
-										</header>
-									</article>
-							</div>							
-							</div>
+										<div class="card-container" style="background: url(images/seyhan.jpg);width:192px;height:240px;">
+												<div class="overlay">
+												  <div class = "items">
+												  </div>
+												  <div class = "items head">
+													<p>Seyhan Şahin</p>
+												  </div>
+												  <div class = "items head">
+													<hr>
+											      </div>
+												  <div class="items cart">
+													<i class="icon solid fa-phone-alt"></i>
+													<span>0553 487 0001</span>
+												</div>
+											  </div>
+											  </div>
+								</div>	
 
 						</div>
 					</section>
@@ -190,7 +218,7 @@
 			<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 			<script>
 				AOS.init(
-					{duration: 1200}
+					{duration: 500}
 				);
 			</script>
 	</body>
