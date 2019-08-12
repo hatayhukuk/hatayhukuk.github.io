@@ -4,6 +4,73 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+$(document).ready(function popup1() {
+	var popup = $("#popup"),
+		doc = $(document),
+		popClass = "popped",
+		showPopup = function (event) {
+		  popup.fadeIn(200);
+		  event.preventDefault();
+		},
+		hidePopup = function (event) {
+		  popup.hide();
+		  event.preventDefault();
+		};
+	
+	doc.on("click", "#open-popup", showPopup);
+	doc.on("click", ".popup__close", hidePopup);
+	
+	doc.keypress(function (event) {
+	  if (event.keyCode === 27) { // esc key
+		hidePopup();
+	  }
+	});
+
+	var popup1 = $("#popup1"),
+	doc = $(document),
+	popClass = "popped",
+	showPopup = function (event) {
+	  popup1.fadeIn(200);
+	  event.preventDefault();
+	},
+	hidePopup = function (event) {
+	  popup1.hide();
+	  event.preventDefault();
+	};
+
+	doc.on("click", "#open-popup1", showPopup);
+	doc.on("click", ".popup__close", hidePopup);
+
+	doc.keypress(function (event) {
+	if (event.keyCode === 27) { // esc key
+		hidePopup();
+	}
+	});
+
+	var popup2 = $("#popup2"),
+	doc = $(document),
+	popClass = "popped",
+	showPopup = function (event) {
+	  popup2.fadeIn(200);
+	  event.preventDefault();
+	},
+	hidePopup = function (event) {
+	  popup2.hide();
+	  event.preventDefault();
+	};
+
+	doc.on("click", "#open-popup2", showPopup);
+	doc.on("click", ".popup__close", hidePopup);
+
+	doc.keypress(function (event) {
+	if (event.keyCode === 27) { // esc key
+		hidePopup();
+	}
+	});
+
+	
+  });
+  
 (function($) {
 
 	var	$window = $(window),
