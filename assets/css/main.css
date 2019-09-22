@@ -2506,6 +2506,8 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
+		position: fixed;
+		bottom: 0;
 		margin-left: 375px;
 		text-align: center;
 		background-color: #dce3e2;
@@ -2532,6 +2534,12 @@ input, select, textarea {
 					padding-left: 0;
 					margin-left: 0;
 				}
+
+				@media (max-height:800px){
+					footer { position: static; }
+					header { padding-top:40px; }
+				}
+				
 
 /* Main */
 
