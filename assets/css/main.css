@@ -150,6 +150,7 @@ ol, ul {
   .profile__details {
 	margin: 0 2em 0 0;
 	text-align: center;
+	height: auto;
   }
   @media screen and (min-width: 30em) {
 	.profile__details {
@@ -231,6 +232,7 @@ ol, ul {
 	color: #205081;
   }
 
+/* card card card */
 .card-container {
 	top: 0;
 	right: 0;
